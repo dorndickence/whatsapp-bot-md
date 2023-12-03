@@ -4,7 +4,7 @@ bot(
   {
     pattern: 'news ?(.*)',
     fromMe: true,
-    desc: 'malayalam news',
+    desc: 'Kenyannews',
     type: 'misc',
   },
   async (message, match) => {
@@ -16,7 +16,7 @@ bot(
           text: `🗞${title}${time ? `\n🕒${time}` : ''}\n`,
           id: `news ${url}`,
         })),
-        'Malayalam News',
+        'kenyan News',
         message.jid,
         message.participant
       )
