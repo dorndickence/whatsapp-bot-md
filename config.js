@@ -9,7 +9,7 @@ const DATABASE_URL =
   process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || '3_12_2034_dfa9_8ade').trim(),
+  SESSION_ID: (process.env.SESSION_ID || '4_12_7c86_9f8b_a430').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -54,13 +54,13 @@ module.exports = {
   AUTO_STATUS_VIEW: (process.env.AUTO_STATUS_VIEW || 'true').trim(),
   SEND_READ: toBool(process.env.SEND_READ),
   KOYEB: toBool(process.env.KOYEB),
-  KOYEB_NAME: (process.env.KOYEB_NAME || '').trim(),
-  KOYEB_API: (process.env.KOYEB_API || '').trim(),
+  KOYEB_NAME: (process.env.KOYEB_NAME || 'null').trim(),
+  KOYEB_API: (process.env.KOYEB_API || 'null').trim(),
   AJOIN: toBool(process.env.AJOIN),
   GPT: (process.env.GPT || 'free').trim(),
   MODEL: (process.env.MODEL || 'gpt-3.5-turbo').trim(),
-  APPROVE: (process.env.APPROVE || '').trim(),
-  ANTI_DELETE: (process.env.ANTI_DELETE || 'null').trim(),
+  APPROVE: (process.env.APPROVE || 'true').trim(),
+  ANTI_DELETE: (process.env.ANTI_DELETE || 'true').trim(),
   PERSONAL_MESSAGE: process.env.PERSONAL_MESSAGE || 'true',
   DISABLE_START_MESSAGE: process.env.DISABLE_START_MESSAGE
     ? toBool(process.env.DISABLE_START_MESSAGE)
