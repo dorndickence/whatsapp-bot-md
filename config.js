@@ -45,7 +45,7 @@ module.exports = {
   ANTILINK_MSG: process.env.ANTILINK_MSG || '_Antilink Detected &mention kicked_',
   ANTISPAM_MSG: process.env.ANTISPAM_MSG || '_Antispam Detected &mention kicked_',
   ANTIWORDS_MSG: process.env.ANTIWORDS_MSG || '_AntiWord Detected &mention kicked_',
-  ANTIWORDS: process.env.ANTIWORDS || 'fuck','let's earn','penis','vagina','idiot','money',
+  ANTIWORDS: process.env.ANTIWORDS || 'fuck','earn','penis','vagina','idiot','money',
   MENTION: process.env.MENTION || 'true',
   SS_TOKEN: process.env.SS_TOKEN || '',
   MAX_UPLOAD: process.env.MAX_UPLOAD || 300,
